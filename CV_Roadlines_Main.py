@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+import os
+from os import listdir
+
 def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
     for line in lines:
         if len(line) > 0:
@@ -108,8 +111,8 @@ def recommend_direction(lane_lines):
         else:
             return "Straight"
 
-
 # Image Paths
+
 turn_1 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 1.jpg"
 turn_2 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 2.jpg"
 turn_3 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 3.jpg"

@@ -114,7 +114,6 @@ def recommend_direction(lane_lines):
 # Image Paths
 turns_folder = "C:\Paradigm\Paradigm_CV_2024\Computer-Vision-2024\Driving Pictures\Turns"
 straights_folder = "C:\Paradigm\Paradigm_CV_2024\Computer-Vision-2024\Driving Pictures\Straights"
-
 turns = []
 straights = []
 
@@ -123,17 +122,7 @@ for image in os.listdir(turns_folder):
 
 for image in os.listdir(straights_folder):
         straights.append(straights_folder + "/" + image)
-
-turn_1 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 1.jpg"
-turn_2 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 2.jpg"
-turn_3 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 3.jpg"
-turn_4 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 4.jpg"
-turn_5 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 5.jpg"
-turn_6 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/turn 6.jpg"
-straight_2 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/straight 2.jpg"
-straight_3 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/straight 3.jpg"
-straight_4 = "C:/Paradigm/Paradigm_CV_2024/Driving Pictures/Inputimages.png"
-
+        
 print(turns[2])
 image = cv2.imread(turns[2])
 

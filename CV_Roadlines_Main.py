@@ -123,8 +123,7 @@ for image in os.listdir(turns_folder):
 for image in os.listdir(straights_folder):
         straights.append(straights_folder + "/" + image)
         
-print(turns[2])
-image = cv2.imread(turns[2])
+image = cv2.imread(straights[4])
 
 # Process Image
 processed_image = process_frame(image)
